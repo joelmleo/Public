@@ -2,10 +2,10 @@
 Copyright Joel M. Leo
 Joel_Leo@gap.com
 
-w32time_query-v1.1.ps1 is a script that gathers information on an Active Directory forest for all domains, then iteratively queries
-each domain controller in each domain for its time configuration, current time, and offset from the PDC emulator. There are a
-million improvements that could be made to it, but it sufficed for my purposes at the time I wrote it, and have decided to share it
-publicly. When I have the need or desire to update it, I will do so, but in the mean time, perhaps you'll find it useful too =)
+w32time_query-v1.1.ps1 is a script that gathers information on an Active Directory forest for all domains, then queries each domain
+controller in each domain through WinRM for its time configuration, current time, and offset from the PDC emulator. There are a
+million improvements that could be made to it, but it sufficed for my purposes at the time I wrote it, and have decided to share
+it publicly. When I have the need or desire to update it, I will do so, but in the mean time, perhaps you'll find it useful too =)
 
 Usage:
 .\w32time_query-v1.1.ps1 -forest <forestName>
