@@ -31,4 +31,4 @@ foreach ($dom in (get-adforest).domains) {
         }
     }
 }
-return $results | Out-Null
+return (, $results) | Out-Null
